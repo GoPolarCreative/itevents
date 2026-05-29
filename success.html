@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanks! — It Events & Party Hire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --accent: #de2ee9;
+      --accent-glow: rgba(222, 46, 233, 0.15);
+      --white: #ffffff;
+      --muted: #888888;
+      --muted-light: #aaaaaa;
+      --text: #e8e8e8;
+      --transition: 0.3s ease;
+    }
+
+    html, body {
+      min-height: 100%;
+      background: var(--black);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100svh;
+      padding: 40px 24px;
+      gap: 40px;
+    }
+
+    .video-wrap {
+      width: 100%;
+      max-width: 420px;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 75vh;
+    }
+
+    .video-wrap video {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .message {
+      text-align: center;
+      max-width: 520px;
+    }
+
+    .message h1 {
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .message h1 span {
+      color: var(--accent);
+    }
+
+    .message p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--muted-light);
+      line-height: 1.75;
+    }
+
+    .back-link {
+      margin-top: 8px;
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color var(--transition);
+    }
+
+    .back-link:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      .video-wrap {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+
+      .video-wrap video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-wrap">
+    <video
+      src="./assets/success-video.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+  </div>
+
+  <div class="message">
+    <h1>You're <span>locked in!</span></h1>
+    <p>Thanks for reaching out! We'll be in touch via text first to make sure we're a great fit for each other — then we'll get a call in the books and lock in your date.</p>
+  </div>
+
+  <a href="index.html" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back to Home
+  </a>
+
+</body>
+</html>
